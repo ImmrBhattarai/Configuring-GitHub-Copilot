@@ -8,12 +8,12 @@ app.get('/cep/:cep', async (req, res) => {
   // Validate if CEP contains only numbers
   if (!/^\d+$/.test(cep)) {
     return res.status(400).json({
-      message: "CEP inválido. Por favor, forneça apenas números até que o governo resolva."
+      message: "Invalid zip code. Please provide only numbers until the government resolves this."
     });
   }
 
   try {
-    const response = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
+    const response = await axios.get(`https://viacep.com.br/ws/${cep}/json/`); //viacep.com.br is a Brazillian Postal Code API Service
     if (response.data.erro) {
       return res.status(404).json({ error: 'CEP not found' });
     }
