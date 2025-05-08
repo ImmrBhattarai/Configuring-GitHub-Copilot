@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casino Roulette Physics Simulation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Casino Roulette Simulation</h1>
+        
+        <div class="roulette-table">
+            <canvas id="rouletteCanvas"></canvas>
+            <div class="controls">
+                <button id="spinButton">Spin Roulette</button>
+                <button id="resetButton">Reset</button>
+                <div class="info-panel">
+                    <p>Last number: <span id="lastNumber">-</span></p>
+                    <p>Status: <span id="status">Ready to spin</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="ballRollingSound" src="assets/sounds/ball-rolling.mp3" preload="auto"></audio>
+    <audio id="wheelSpinningSound" src="assets/sounds/wheel-spinning.mp3" preload="auto"></audio>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

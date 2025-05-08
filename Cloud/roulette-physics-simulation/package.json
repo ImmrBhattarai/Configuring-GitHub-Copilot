@@ -1,0 +1,16 @@
+{
+  "name": "roulette-physics-simulation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^10.0.0",
+    "chai": "^4.3.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
